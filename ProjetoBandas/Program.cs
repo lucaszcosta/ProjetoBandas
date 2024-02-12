@@ -119,7 +119,7 @@ void MediaBanda()
     Console.WriteLine("Qual banda você deseja exibir a média?:");
     string nomeBanda = Console.ReadLine()!;
     if (bandasRegistradas.ContainsKey(nomeBanda))
-    {
+    
         double media = bandasRegistradas[nomeBanda].Average();
         Console.WriteLine($"A banda {nomeBanda} possui uma média de {media}");
     }
